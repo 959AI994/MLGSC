@@ -1,0 +1,38 @@
+{
+    "dataset": {
+        "Indian_pines": {
+            "img_path": "./HSI_data/Indian_pines.mat",
+            "gt_path": "./HSI_data/Indian_pines_gt.mat"
+        },
+        "paviaU": {
+            "img_path": "./HSI_data/paviaU.mat",
+            "gt_path": "./HSI_data/paviaU_gt.mat"
+        },
+        "Houston": {
+            "img_path": "./HSI_data/Houston.mat",
+            "gt_path": "./HSI_data/Houston_gt.mat"
+        },
+        "xuzhou": {
+            "img_path": "./HSI_data/xuzhou.mat",
+            "gt_path": "./HSI_data/xuzhou_gt.mat"
+        }
+    },
+
+    "device": "cpu",
+    "train_cluster": "kmeans",
+    "eval_cluster": "gcsc",
+    "num_pc": 8,
+    "size": 11,
+    "lr": 0.005,
+    "batch_size": 500,
+    "n_neighbors": 30,
+    "num_openings_closings": 4,
+    "num_epoches": 300,
+    "drop1": 0.25,
+    "drop2": 0.4,
+    "regenerate_mat": false,
+
+    "save_model": true,
+    "save_path": "./save",
+    "result_path": "./result"
+}
