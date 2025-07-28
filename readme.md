@@ -1,7 +1,7 @@
 # Multi-level Graph Subspace Contrastive Learning for Hyperspectral Image Clustering
 
 **Authors**: Jingxin Wang, Renxiang Guan, Kainan Gao, Zihao Li, Hao Li, Xianju Li, Chang Tang
-
+**Email**: jingxin.wang@sjtu.edu.cn
 ## Abstract
 Hyperspectral image (HSI) clustering is a challenging task due to its high complexity. Despite subspace clustering showing impressive performance for HSI, traditional methods tend to ignore the global-local interaction in HSI data. In this study, we proposed a multi-level graph subspace contrastive learning (MLGSC) for HSI clustering. The model is divided into the following main parts:
 
@@ -91,9 +91,6 @@ python main4.py Indian_pines model.pkl  # 在Indian_pines数据集上加载对�
 ---
 ### 一些简单测试结果
 其中，emp特征和现模型用的是GCSC来聚类的，GCSC和GCSCK是图子空间聚类的两种聚类方法。现模型目前仅针对GCSC进行了简单实验，能够比GCSC更好。（GCSCK算的过慢，调起来用时太多）
-
-为啥只测了截取的？所有点全输入的情况下图子空间聚类的两种聚类方法全都太慢了，没办法测代码。
-
 model名后面标`m`意为用了minibatch，标`g`意为用了GCSC来聚类
 
 #### indian截取
