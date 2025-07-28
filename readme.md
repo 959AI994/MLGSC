@@ -1,3 +1,35 @@
+# Multi-level Graph Subspace Contrastive Learning for Hyperspectral Image Clustering
+
+**Authors**: Jingxin Wang, Renxiang Guan, Kainan Gao, Zihao Li, Hao Li, Xianju Li, Chang Tang
+
+## Abstract
+Hyperspectral image (HSI) clustering is a challenging task due to its high complexity. Despite subspace clustering showing impressive performance for HSI, traditional methods tend to ignore the global-local interaction in HSI data. In this study, we proposed a multi-level graph subspace contrastive learning (MLGSC) for HSI clustering. The model is divided into the following main parts:
+
+1. **Graph convolution subspace construction**: Utilizing spectral and texture features to construct two graph convolution views.
+2. **Local-global graph representation**: Local graph representations were obtained by step-by-step convolutions, and a more representative global graph representation was obtained using an attention-based pooling strategy.
+3. **Multi-level graph subspace contrastive learning**: Multi-level contrastive learning was conducted to obtain local-global joint graph representations, to improve the consistency of the positive samples between views, and to obtain more robust graph embeddings.
+
+Specifically, graph-level contrastive learning is used to better learn global representations of HSI data. Node-level intra-view and inter-view contrastive learning is designed to learn joint representations of local regions of HSI.
+
+The proposed model is evaluated on four popular HSI datasets: Indian Pines, Pavia University, Houston, and Xu Zhou. The overall accuracies are 97.75%, 99.96%, 92.28%, and 95.73%, which significantly outperforms the current state-of-the-art clustering methods.
+
+## Paper Link
+You can access the full paper on [arXiv: Multi-level Graph Subspace Contrastive Learning for Hyperspectral Image Clustering](https://arxiv.org/abs/2404.05211)
+
+## Results
+- **Indian Pines**: 97.75% accuracy
+- **Pavia University**: 99.96% accuracy
+- **Houston**: 92.28% accuracy
+- **Xu Zhou**: 95.73% accuracy
+
+These results significantly outperform current state-of-the-art clustering methods.
+
+## Keywords
+- Hyperspectral Image Clustering
+- Graph Convolution
+- Contrastive Learning
+- Multi-level Learning
+  
 ## 注意事项
 ### 用法
 `./old/main.py`
